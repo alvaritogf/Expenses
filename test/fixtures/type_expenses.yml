@@ -1,0 +1,9 @@
+one:
+  name: Employees
+  description: For employees
+  category_expense: two
+
+two:
+  name: Visitors
+  description: Visitors
+  category_expense: one

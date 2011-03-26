@@ -1,0 +1,11 @@
+one:
+  amount: 100.00
+  vat: true
+  description: Tranport to Dublin
+  type_expense: one
+
+two:
+  amount: 12.00
+  vat: true
+  description: Lunch with Business Manager
+  type_expense: two

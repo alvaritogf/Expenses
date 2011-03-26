@@ -1,0 +1,16 @@
+<% title "Type Expense" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @type_expense.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @type_expense.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_type_expense_path(@type_expense) %> |
+  <%= link_to "Destroy", @type_expense, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", type_expenses_path %>
+</p>

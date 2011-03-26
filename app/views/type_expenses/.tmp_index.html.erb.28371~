@@ -1,0 +1,19 @@
+<% title "Type Expenses" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <% for type_expense in @type_expenses %>
+    <tr>
+      <td><%= type_expense.name %></td>
+      <td><%= type_expense.description %></td>
+      <td><%= link_to "Show", type_expense %></td>
+      <td><%= link_to "Edit", edit_type_expense_path(type_expense) %></td>
+      <td><%= link_to "Destroy", type_expense, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Type Expense", new_type_expense_path %></p>

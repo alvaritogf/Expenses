@@ -1,0 +1,16 @@
+<% title "Category Expense" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @category_expense.name %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @category_expense.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_category_expense_path(@category_expense) %> |
+  <%= link_to "Destroy", @category_expense, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", category_expenses_path %>
+</p>

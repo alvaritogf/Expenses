@@ -1,0 +1,16 @@
+<%= form_for @expense do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.label :vat %><br />
+    <%= f.check_box :vat %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

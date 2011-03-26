@@ -1,0 +1,8 @@
+<% title "Edit Type Expense" %>
+
+<%= render 'form' %>
+
+<p>
+  <%= link_to "Show", @type_expense %> |
+  <%= link_to "View All", type_expenses_path %>
+</p>
